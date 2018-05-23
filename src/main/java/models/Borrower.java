@@ -57,4 +57,8 @@ public class Borrower  {
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
+
+    public String readBook(){
+        return "i love to read";
+    }
 }
