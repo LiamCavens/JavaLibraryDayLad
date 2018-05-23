@@ -5,7 +5,9 @@ import models.Borrower;
 import models.Library;
 
 public class Seed {
-    public static void seedDate{
+
+    public static void seedData(){
+
         DBHelper.deleteAll(Library.class);
         DBHelper.deleteAll(Borrower.class);
         DBHelper.deleteAll(Book.class);
