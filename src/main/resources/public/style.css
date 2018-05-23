@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+th, td {
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+    border: 10px groove gray;
+}
+
+.container-db {
+    display: flex;
+    justify-content: center;
+}

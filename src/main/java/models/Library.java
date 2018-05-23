@@ -19,6 +19,9 @@ public class Library {
         this.name = name;
     }
 
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
     public int getId() {
         return id;
     }

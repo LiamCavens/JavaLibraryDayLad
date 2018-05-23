@@ -1,0 +1,15 @@
+<h1>All Libraries</h1>
+
+<div class="container-db">
+    <table>
+        <tr>
+            <th>Library Name</th>
+        </tr>
+
+        #foreach ($library in $libraries)
+        <tr>
+            <td>$library.getName()</td>
+        </tr>
+        #end
+    </table>
+</div>

@@ -45,9 +45,9 @@ public class DBHelper {
         session = HibernateUtil.getSessionFactory().openSession();
 
         try {
-            String hql = "DELETE FROM " + classType;
+            String hql = "DELETE FROM " + classType.getName();
             transaction = session.beginTransaction();
-            session.createQuery(hql);
+            session.createQuery(hql).executeUpdate();
             transaction.commit();
         } catch (HibernateException e) {
             transaction.rollback();
