@@ -31,4 +31,14 @@ public class LibraryTest {
     public void libraryHasName() {
         assertEquals("Dragons Book Emporium", library.getName());
     }
+
+    @Test
+    public void borrowerHasLibary() {
+        assertEquals("Dragons Book Emporium", borrower1.getLibrary().getName());
+    }
+
+    @Test
+    public void boookBelongsToLibrary() {
+        assertEquals("Dragons Book Emporium", book1.getLibrary().getName());
+    }
 }
